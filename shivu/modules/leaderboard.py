@@ -94,7 +94,7 @@ async def stats(update: Update, context: CallbackContext) -> None:
     
     if update.effective_user.id != 2047725696:
      await update.message.reply_text("You are not authorized to use this command.")
-        return
+        
 
     
     user_count = await user_collection.count_documents({})
